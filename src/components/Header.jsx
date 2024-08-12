@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Navbar = () => {
+const Header = () => {
     return (
       
  <header id="#top">
@@ -28,12 +28,12 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="about.html">
+            <a className="nav-link" href="/tafsir">
               كتب التفسير
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="explore.html">
+            <a className="nav-link" href="/hadith">
               كتب الحديث
             </a>
           </li>
@@ -62,7 +62,7 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default Header;
 
 
 
