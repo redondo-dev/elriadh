@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.live-tv-container{
+   display:flex; 
+   text-align: center;
+   margin: 30px;
+  
+}
+.live-tv-list{
+  margin: 0 auto ;
+}
+.titre{
+  text-align: end;
+}
+.live-tv-container{
+  margin-top: 100px;
+
+}
+/* .logo{
+  margin-left: 75%;
+}  */
