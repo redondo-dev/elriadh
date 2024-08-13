@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-              <div className="about-widget">
+              <div className="about-widget" style={{ marginTop:'10px'}}>
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-bME80_zMAocNp15c4w1fZbNJ4lewtJt4A&usqp=CAU"
                   alt="designer template by TemplateMo"
@@ -15,9 +15,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-2 offset-lg-2">
-              <div className="location-widget">
-                <h4>عنواننا</h4>
-                <p>
+              <div className="location-widget" style={{marginTop:'20px'}} >
+                <h4 style={{fontWeight:'bold',color:'white'}} >عنواننا</h4>
+                <p style={{fontWeight:'bold',color:'white'}}>
                   شارع ستانسلاس, <br />
                   <br />
                   13006, <br />
@@ -26,8 +26,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-2">
-              <div className="customer-care">
-                <h4>للاتصال بنا</h4>
+              <div className="customer-care" style={{marginTop:'20px'}}>
+                <h4 style={{fontWeight:'bold',color:'white'}}>للاتصال بنا</h4>
                 <ul className="info">
                   <li>
                     <a href="#">0033634404348</a>
@@ -42,8 +42,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-2">
-              <div className="follow-us">
-                <h4>تابعونا</h4>
+              <div className="follow-us" style={{marginTop:'20px'}}>
+                <h4 style={{fontWeight:'bold',color:'white'}}>تابعونا</h4>
                 <ul className="social-links">
                   <li>
                     <a href="#">

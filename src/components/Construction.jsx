@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Construction = () => {
   return (
     <section className="rounded-3xl shadow-2xl">
@@ -16,8 +17,8 @@ const Construction = () => {
         <h3 className="mt-6 text-3xl font-bold text-blue-500">
           From reda with love 💕😘😘💕{" "}
         </h3>
-
-        <Link
+       
+        <Link 
           className="mt-8 inline-block w-full rounded-full bg-pink-600 py-4 text-sm font-bold text-white shadow-xl"
           href="/"
         >
