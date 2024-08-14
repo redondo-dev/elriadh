@@ -15,6 +15,7 @@ import Hadith  from './pages/Hadith';
 import Tafsir from './pages/Tafsir';
 import Home from './pages/Home';
 import Error404 from './components/Error404';
+import VideoTypes from './components/videoTypes/VideoTypes';
 
 
 const router = createBrowserRouter([
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
   },
   
 
-  
+  {
+    path: "/videos",
+    element:<VideoTypes/>,
+   
+  },
   
   
  

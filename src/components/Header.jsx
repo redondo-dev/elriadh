@@ -38,9 +38,8 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="trending.html">
-              قنوات على مباشر
-            </a>
+            <a className="nav-link" href="/videos">
+              نفحات ايمانية</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="contact.html">
@@ -48,7 +47,7 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" href="index.html">
+            <a className="nav-link active" href="/home">
               {" "}
               الصفحة الرئيسية
             </a>
