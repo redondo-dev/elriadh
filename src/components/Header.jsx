@@ -5,15 +5,16 @@ const Header = () => {
     return (
       
  <header id="#top">
+   
   <nav className="main-navigation navbar navbar-expand-lg navbar-light">
-    <div className="container">
-      <a className="navbar-brand" href="index.html">
+  <a className="navbar-brand" href="index.html">
         <img
           className="logo"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-bME80_zMAocNp15c4w1fZbNJ4lewtJt4A&usqp=CAU"
           alt="logo"
         />
       </a>
+    <div className="container">
       <button
         className="navbar-toggler"
         type="button"

@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-no-undef */
 import React from "react";
-import Navbar from "../components/Header";
 import Footer from "../components/Footer";
 import Construction from "../components/Construction";
+import Header from "../components/Header";
 
 const Tafsir = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <Construction/>
       <Footer />
     </>

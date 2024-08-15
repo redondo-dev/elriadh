@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-              <div className="about-widget" style={{ marginTop:'10px'}}>
-                <img
+              <div className="about-widget" >
+                <img className='logo'style={{margin:'10px',height:'200px',width:'200px'}}
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-bME80_zMAocNp15c4w1fZbNJ4lewtJt4A&usqp=CAU"
                   alt="designer template by TemplateMo"
                 />
@@ -130,7 +130,7 @@ const Footer = () => {
               <div className="sub-footer">
                 <div className="row">
                   <div className="col-lg-6">
-                    <p>
+                    <p style={{marginTop:'20px'}}>
                       Copyright © {new Date().getFullYear()} , Riad Reda. All Rights Reserved.
                       <br />
                     </p>

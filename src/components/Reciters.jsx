@@ -153,7 +153,7 @@ const Reciters = () => {
         <div style={{ marginBottom: '30px' }}className="row">
           <div className="col-lg-4">
             <fieldset>
-              <label htmlFor="chooseReciter" className="form-label">
+              <label htmlFor="chooseReciter" className="form-label" style={{fontWeight:'bold',fontSize:'22px',color:'white'}}>
                 اختر القارئ
               </label>
               <select
@@ -179,7 +179,7 @@ const Reciters = () => {
           <div className="col-lg-4">
             {moshaf.length > 0 && (
               <div>
-                <label htmlFor="chooseMoshaf" className="form-label">
+                <label htmlFor="chooseMoshaf" className="form-label" style={{fontWeight:'bold',fontSize:'22px',color:'white'}}>
                   اختر المصحف
                 </label>
                 <select
@@ -203,7 +203,7 @@ const Reciters = () => {
           <div className="col-lg-4">
             {selectedMoshaf && suratList.length > 0 && (
               <div>
-                <label htmlFor="chooseSurat" className="form-label">
+                <label htmlFor="chooseSurat" className="form-label" style={{fontWeight:'bold',fontSize:'22px', color:'white'}} >
                   اختر السورة
                 </label>
                 <select

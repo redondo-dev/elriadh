@@ -37,7 +37,7 @@ const LiveTv = () => {
   }, [channels]);
 
   return (
-    <div marginTop={"50px"}className="live-tv-container">
+    <div className="live-tv-container">
       <h1 className='titre'>بث مباشر</h1>
       <div className="live-tv-list">
         {channels.map((channel, index) => (

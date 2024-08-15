@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../videoTypes/videoType.css';
+import Header from '../Header';
+import Footer from '../Footer';
 
 const VideoTypes = () => {
     const [videos, setVideos] = useState([]);
@@ -26,6 +28,7 @@ const VideoTypes = () => {
     if (error) return <p>Error: {error.message}</p>;
   
     return (
+     
       <div>
       <h1>Video List</h1>
       {videos.map((reciter) => (
@@ -44,6 +47,7 @@ const VideoTypes = () => {
         </div>
       ))}
     </div>
+   
   );
 };
   
