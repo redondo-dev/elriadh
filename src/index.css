@@ -20,6 +20,10 @@ code {
    background-color: #302e2e;
    color:aliceblue;
    flex-wrap: wrap;
+   background-image: url(https://cdn.pixabay.com/photo/2019/10/04/09/05/mosque-4525124_1280.jpg);
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
    
   
 }
