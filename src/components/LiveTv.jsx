@@ -43,7 +43,7 @@ const LiveTv = () => {
         {channels.map((channel, index) => (
           <div className="live-tv-item" key={channel.id}>
             <h2>{channel.name}</h2>
-            <video ref={el => (videoRefs.current[index] = el)} controls>
+            <video className="video"ref={el => (videoRefs.current[index] = el)} controls>
               Votre navigateur ne prend pas en charge la balise vidéo.
             </video>
           </div>

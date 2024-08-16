@@ -7,11 +7,9 @@ body {
   max-width: 1320px;
 }
 .logo{
-  position: absolute;
-  max-width:100px ;
-  margin-left: 10px;
+
   border-radius:9999px;
-}
+} 
 @media (min-width: 768px) {
   .expanded {
     width: 100%;
@@ -110,6 +108,7 @@ section {
 }
 
 @media (min-width: 576px) {
+
   section {
     margin-top: 60px;
     padding-top: 60px;

@@ -30,6 +30,11 @@ code {
 .live-tv-list{
   margin: 0 auto ;
 }
+.video{
+  max-width: 400px;
+  margin:0 auto,
+}
+  
 .titre{
   text-align: start;
   color: aliceblue;
@@ -39,3 +44,4 @@ code {
 footer{
    background: #1a1a1a;
 }
+
