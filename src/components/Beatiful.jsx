@@ -14,7 +14,7 @@ const Beatiful = () => {
                 <em> في رياض</em> القرآن الكريم
               </h2>
               <div className="white-button">
-                <a href="./">اكتشف اكثر</a>
+                <a href="./"> استمع للتلاوة&#x25BC;</a>
               </div>
             </div>
           </div>
