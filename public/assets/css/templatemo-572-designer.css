@@ -7,7 +7,9 @@ body {
   max-width: 1320px;
 }
 .logo{
-
+  position: absolute;
+  max-width:100px ;
+  margin-left:10px;
   border-radius:9999px;
 } 
 @media (min-width: 768px) {
