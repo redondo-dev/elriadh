@@ -44,8 +44,8 @@ const Header = () => {
               نفحات ايمانية</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="contact.html">
-              القراء
+            <a className="nav-link" href="/quran">
+             القراءة
             </a>
           </li>
           <li className="nav-item">

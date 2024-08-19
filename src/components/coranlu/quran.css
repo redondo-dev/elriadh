@@ -1,0 +1,91 @@
+
+
+.quran-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .surah-list {
+    margin-bottom: 20px;
+  }
+  
+  .surah-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .surah-list li {
+    display: block;
+    width: 100%; 
+    padding: 15px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .surah-list li:hover {
+    background-color: #ecc5c5;
+  }
+  
+  .surah-list li.selected {
+    background-color: #d4edda; 
+  }
+  
+  .verses-container h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .verses-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .verses-container li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .verses-container p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+  }
+  
+  .verses-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  p.arabic {
+    font-size: 1.5rem;
+    text-align: right;
+    direction: rtl;
+    color: #000;
+  }
+  
+  p.french {
+    font-size: 1rem;
+    text-align: left;
+    color: #333;
+  }
+  

@@ -12,19 +12,19 @@ const HisnAlMuslim = () => {
   useEffect(() => {
     const fetchAdkarData = async () => {
       try {
-        // Fetch titles of Adkar
+        
         const titleResponse = await axios.get(
           "https://www.hisnmuslim.com/api/ar/husn_ar.json"
         );
         const titles = titleResponse.data["العربية"];
 
-        // Fetch Adkar details
+        
         const adkarResponse = await axios.get(
           "https://www.hisnmuslim.com/api/ar/27.json"
         );
         const adkarData = adkarResponse.data["أذكار الصباح والمساء"];
 
-        // Combine titles with their corresponding Adkar details
+        
         const combinedData = adkarData.map((adkar, index) => ({
           ...adkar,
           title: titles[index]?.TITLE,
