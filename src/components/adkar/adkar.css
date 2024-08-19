@@ -1,0 +1,53 @@
+
+/* adkar.css */
+
+.containeradkar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px; 
+    padding: 10px;
+    background-image: url("https://media.istockphoto.com/id/1505684649/fr/photo/gros-plan-du-livre-saint-coran-%C3%A0-la-mosqu%C3%A9e.jpg?s=612x612&w=0&k=20&c=1DRSTP-5u_bcuTlakPAJPAuTm4CAsGYxuhx72GOLddM=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card {
+    background-color: #181a17;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease;
+    color: #ffffff; 
+   
+  }
+  
+  .card:hover {
+   
+    background-color: lightblue;
+    transform: scale(1.05) !important;
+    transition: transform 0.2s ease !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  audio {
+    width: 100%;
+    margin-top: 10px;
+  }
+  

@@ -2,6 +2,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import {motion } from "framer-motion";
+import './adkar.css';
+
+
 const HisnAlMuslim = () => {
   const [adkarList, setAdkarList] = useState([]);
 
@@ -36,21 +40,28 @@ const HisnAlMuslim = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Liste des Adkar</h1>
-      <ul>
-        {adkarList.map((adkar) => (
-          <li key={adkar.ID}>
-            <h2> {adkar.title}</h2>
-            <p>{adkar.ARABIC_TEXT}</p>
-            <audio controls>
-              <source src={adkar.AUDIO} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </li>
-        ))}
-      </ul>
-    </div>
+  <><h1>Liste des Adkar</h1>
+    <div className="containeradkar">
+    <ul>
+      {adkarList.map((adkar) => (
+        <motion.li
+          key={adkar.ID}
+          className="card"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2>{adkar.title}</h2>
+          <p>{adkar.ARABIC_TEXT}</p>
+          <audio controls>
+            <source src={adkar.AUDIO} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </motion.li>
+      ))}
+    </ul>
+  </div>
+  </>
   );
 };
 

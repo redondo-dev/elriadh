@@ -47,7 +47,7 @@ const VideoTypes = () => {
         </div>
       ))}
     </div>
-   
+  
   );
 };
   
