@@ -16,7 +16,7 @@ import Tafsir from './pages/Tafsir';
 import Home from './pages/Home';
 import Error404 from './components/Error404';
 import VideoTypes from './components/videoTypes/VideoTypes';
-import Quran from './components/coranlu/Quran';
+import Quran from './components/coranlu/Quranlu';
 
 
 const router = createBrowserRouter([

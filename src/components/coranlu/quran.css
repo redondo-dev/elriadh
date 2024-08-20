@@ -1,23 +1,28 @@
 
 
+
 .quran-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display :grid;
+  grid-template-columns: 1fr 3fr;
+  gap:10px;
+  padding: 20px;
+  background-color: #262525;  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #d21e1e;
   }
+ 
   
+
   .surah-list {
     margin-bottom: 20px;
+    grid-column: 1 / 2; 
   }
   
   .surah-list ul {
@@ -47,19 +52,24 @@
     background-color: #d4edda; 
   }
   
-  .verses-container h2 {
+  .amiri-quran-regular{
+    grid-column: 2 / 3; 
+  }
+  .amiri-quran-regular  h2 {
     margin-top: 20px;
     font-size: 1.5rem;
     color: #333;
   }
   
-  .verses-container ul {
+  .amiri-quran-regular  ul {
+   
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  .verses-container li {
+  .amiri-quran-regular  li {
+    
     margin-bottom: 20px;
     padding: 15px;
     background-color: #fff;
@@ -67,25 +77,30 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .verses-container p {
+  .amiri-quran-regular  p {
+   
     margin: 0 0 10px;
     line-height: 1.6;
+   
   }
   
-  .verses-container p:last-child {
+  .amiri-quran-regular  p:last-child {
     margin-bottom: 0;
   }
   
   p.arabic {
+   
     font-size: 1.5rem;
     text-align: right;
     direction: rtl;
     color: #000;
+    
   }
   
   p.french {
     font-size: 1rem;
     text-align: left;
     color: #333;
+    background-color: #d4edda; 
   }
   

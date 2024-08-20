@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import axios from "axios";
+
 import './quran.css'
 
-const Quran = () => {
+const Quranlu = () => {
   const [surahList, setSurahList] = useState([]);
   const [verses, setVerses] = useState([]);
   const [selectedSurah, setSelectedSurah] = useState(null);
@@ -22,6 +23,20 @@ const Quran = () => {
     fetchSurahList();
   }, []);
 
+  const addAyaNumbers = (verses) => {
+    return verses.map((verse, index) => {
+      const verseNumberUnicode = `(&#x06F${index + 1})`; 
+      return {
+        ...verse,
+        arabic: `${verse.arabic} ${verseNumberUnicode}`,
+      };
+    });
+  };
+
+
+
+
+
   const handleSurahClick = async (surahNumber) => {
     try {
       const arabicResponse = await axios.get(
@@ -39,8 +54,12 @@ const Quran = () => {
         french: frenchVerses[index]?.text,
       }));
 
-      setVerses(combinedVerses);
+      const versesWithNumbers = addAyaNumbers(combinedVerses);
+
+      setVerses(versesWithNumbers);
       setSelectedSurah(surahNumber);
+
+    
     } catch (error) {
       console.error("Erreur lors de la récupération des versets :", error);
     }
@@ -48,8 +67,9 @@ const Quran = () => {
 
   return (
     <div className="quran-container">
-      <h1>Liste des Sourates</h1>
+      
       <div className="surah-list">
+        <h1>Liste des Sourates</h1>
         <ul>
           {surahList.map((surah) => (
             <li
@@ -64,13 +84,13 @@ const Quran = () => {
       </div>
 
       {selectedSurah && (
-        <div className="verses-container">
+        <div className="amiri-quran-regular ">
           <h2>Versets de la Sourate {selectedSurah}</h2>
           <ul>
             {verses.map((verse, index) => (
               <li key={index}>
-                <p className="arabic"><strong>Arabe :</strong> {verse.arabic}</p>
-                <p className="french"><strong>Français :</strong> {verse.french}</p>
+                <p className="arabic" dangerouslySetInnerHTML={{ __html: verse.arabic }}></p>
+                <p className="french"> {verse.french}</p>
               </li>
             ))}
           </ul>
@@ -80,4 +100,4 @@ const Quran = () => {
   );
 };
 
-export default Quran;
+export default Quranlu;

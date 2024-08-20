@@ -5,7 +5,7 @@ import Navbar from './components/Header';
 import Reciters from './components/Reciters';
 import Section from './components/Section';
 import LiveTv from './components/LiveTv';
-
+// import './index.css'
 
 function App() {
   return (
