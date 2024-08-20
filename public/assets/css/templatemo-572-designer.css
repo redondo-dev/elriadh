@@ -250,6 +250,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 }
 
 @media (min-width: 992px) {
+ 
   .navbar-light {
     padding: 0px;
   }

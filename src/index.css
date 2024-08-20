@@ -56,3 +56,10 @@ footer{
    background: #1a1a1a;
 }
 
+@media (max-width: 992px) {
+img.logo{
+margin-left:80%;
+
+} 
+}
+
