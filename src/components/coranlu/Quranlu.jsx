@@ -67,9 +67,8 @@ const Quranlu = () => {
 
   return (
     <div className="quran-container">
-      
+     <h1>Liste des Sourates قائمة السور </h1> 
       <div className="surah-list">
-        <h1>Liste des Sourates قائمة السور </h1>
         <ul>
           {surahList.map((surah) => (
             <li
