@@ -59,6 +59,9 @@ footer{
 @media (max-width: 992px) {
 img.logo{
 margin-left:75%;
+width:200px ;
+height:200px;
+border-radius: 50%;
 
 } 
 }
