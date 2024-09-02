@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Hadith = () => {
   const [books, setBooks] = useState([]);
@@ -51,6 +52,8 @@ const Hadith = () => {
 
   return (
     <>
+    <Header/>
+    <br />
       <h1 style={{ textAlign: "center" }}>Livres de hadith-كتب الحديث</h1>
       <div style={{ padding: "20px" }}>
         {error && <p style={{ color: "red" }}>Error: {error}</p>}

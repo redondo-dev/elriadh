@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import './quran.css'
+import Header from '../Header';
+
 
 const Quranlu = () => {
   const [surahList, setSurahList] = useState([]);
@@ -66,8 +68,10 @@ const Quranlu = () => {
   };
 
   return (
+    <>
+   < Header/>
     <div className="quran-container">
-     <h1>Liste des Sourates قائمة السور </h1> 
+       <h1>Liste des Sourates قائمة السور </h1> 
       <div className="surah-list">
         <ul>
           {surahList.map((surah) => (
@@ -96,6 +100,9 @@ const Quranlu = () => {
         </div>
       )}
     </div>
+
+  
+    </>
   );
 };
 

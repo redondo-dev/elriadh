@@ -9,14 +9,14 @@
   direction:rtl;
   padding: 20px;
   background-color: #262525;  
-  border-radius: 10px;
+ 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
     grid-column: 2/4 ; 
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 30px 20px;
     color: #d21e1e;
   }
  

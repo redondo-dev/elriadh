@@ -28,7 +28,8 @@ const VideoTypes = () => {
     if (error) return <p>Error: {error.message}</p>;
   
     return (
-     
+     <>
+     <Header />
       <div>
       <h1>Video List</h1>
       {videos.map((reciter) => (
@@ -47,7 +48,7 @@ const VideoTypes = () => {
         </div>
       ))}
     </div>
-  
+  </>
   );
 };
   
