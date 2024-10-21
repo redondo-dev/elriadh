@@ -52,17 +52,24 @@ const Hadith = () => {
 
   return (
     <>
-    <Header/>
-    <br />
+      <Header />
+      <br />
       <h1 style={{ textAlign: "center" }}>Livres de hadith-كتب الحديث</h1>
       <div style={{ padding: "20px" }}>
         {error && <p style={{ color: "red" }}>Error: {error}</p>}
         {books.length > 0 ? (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: "20px",
+            }}
+          >
             {books.map((book) => (
               <div
                 key={book.id}
-                onClick={() => handleCardClick(book.bookSlug)} // Ajout du clic
+                onClick={() => handleCardClick(book.bookSlug)}
                 style={{
                   width: "250px",
                   padding: "15px",
@@ -104,10 +111,9 @@ const Hadith = () => {
             <p>{hadithArabic}</p>
           </div>
         )}
-      </div> 
-      <Footer/>
+      </div>
+      <Footer />
     </>
-   
   );
 };
 
